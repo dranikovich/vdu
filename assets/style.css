@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+* {
     font-family: Manrope;
     margin: 0;
     padding: 0;
@@ -7,24 +8,30 @@
     text-decoration: none;
     outline: none;
 }
-body{
+
+body {
     background: linear-gradient(270deg, #CFDCE1, #fff);
 }
-.container{
+
+.container {
     width: 1200px;
     margin: 0 auto;
 }
-header{
+
+header {
     margin-top: 10px;
 }
-header .container{
+
+header .container {
     display: flex;
     justify-content: space-between;
 }
-header .container .icons{
+
+header .container .icons {
     display: flex;
 }
-header .container .icons .circle{
+
+header .container .icons .circle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,50 +41,60 @@ header .container .icons .circle{
     border-radius: 20px;
     margin-left: 10px;
 }
-header .container .icons img{
+
+header .container .icons img {
     width: 20px;
     height: 20px;
 }
-header .container nav{
+
+header .container nav {
     height: 40px;
     display: flex;
     align-items: center;
 }
-header .container nav a{
+
+header .container nav a {
     margin: 0 10px;
     color: #333;
     font-weight: 700;
     font-size: 20px;
 }
-.section-welcome .container{
+
+.section-welcome .container {
     display: flex;
     margin-top: 90px;
 }
-.section-welcome .container .right{
+
+.section-welcome .container .right {
     width: 60%;
 }
-.section-welcome .container .left{
+
+.section-welcome .container .left {
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     /* height: 100%; */
 }
-.section-welcome .container .left img{
+
+.section-welcome .container .left img {
     width: 100%;
 }
-.section-welcome .container .left h1{
+
+.section-welcome .container .left h1 {
     font-size: 38px;
     font-weight: 900;
     color: #07172E;
     line-height: 40px;
 }
-.section-welcome .container .left h2{
+
+.section-welcome .container .left h2 {
     margin-top: 10px;
     font-size: 12px;
     font-weight: 900;
 }
-.section-welcome .container .left a{
+
+.section-welcome .container .left a {
     display: block;
     background-color: #3586FF;
     border-radius: 20px;
@@ -91,24 +108,145 @@ header .container nav a{
     margin-top: 20px;
     outline-offset: 2px;
 }
-.section-choose-curse h2{
+
+.section-choose-curse h2 {
     text-align: center;
 }
-.section-choose-curse .container:last-child{
+
+.section-choose-curse .container:last-child {
     display: flex;
     justify-content: space-between;
 }
-.section-choose-curse .item{
+
+.section-choose-curse .item {
     display: block;
     width: 30%;
     height: 300px;
     background-color: white;
-    border-radius: 20px;
     color: #07172E;
+    border-radius: 20px;
     text-transform: uppercase;
-    text-align: center;
     display: flex;
-    justify-content: end;
     flex-direction: column;
+    justify-content: end;
     align-items: center;
+}
+
+.section-choose-curse h3 {
+    margin: 20px 0;
+}
+
+.section-choose-curse img {
+    height: 70%;
+}
+
+.section-choose-curse h2 {
+    margin: 40px 0;
+    font-size: 40px;
+}
+
+
+/* кнопочка для всего сайта*/
+.button-main {
+    background: #3586FF;
+    padding: 15px 60px;
+    color: #fff;
+    border-radius: 15px;
+    outline: 2px solid #3586FF;
+    outline-offset: 2px;
+    display: inline-block;
+    margin: 40px 0;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-free-try .container {
+    background: url(./images/5.jpg);
+    background-size: cover;
+    border-radius: 22px;
+
+    padding: 150px 40px;
+    color: #07172E;
+}
+
+.section-free-try .container h2 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.section-free-try .container h3 {
+    width: 55%;
+    margin-top: 30px;
+}
+
+.section-courses {
+    margin-top: 40px;
+}
+
+.section-courses .big-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-courses .big-card .left {
+    background: url(./images/6.jpg);
+    height: 300px;
+    width: 48%;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.section-courses .big-card .right {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    height: 300px;
+    justify-content: space-between;
+}
+
+.section-courses .big-card .right .price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-courses .big-card .right .price .button-main {
+    margin: 0;
+}
+
+.section-courses .big-card .right .statistics {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-courses .big-card .right .statistics>* {
+    width: 48%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.section-courses .big-card .right h2 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 36px;
+}
+
+.section-courses .big-card .right h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.section-courses .big-card .right p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.section-courses .big-card .right .label{
+    font-size: 40px;
+    font-weight: 900;
 }
