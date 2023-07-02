@@ -246,7 +246,124 @@ header .container nav a {
     font-weight: 500;
 }
 
-.section-courses .big-card .right .label{
+.section-courses .big-card .right .label {
     font-size: 40px;
     font-weight: 900;
+}
+
+.section-courses .cat-line {
+    display: flex;
+}
+
+.section-courses .cat-line label {
+    padding: 15px 30px;
+    box-shadow: 0 0 10px #6b6b6b;
+    margin-right: 20px;
+    border-radius: 40px;
+}
+
+.section-courses .categoryes #input1:checked~.cat-line label:nth-child(1),
+.section-courses .categoryes #input2:checked~.cat-line label:nth-child(2),
+.section-courses .categoryes #input3:checked~.cat-line label:nth-child(3) {
+    box-shadow: 0 0 10px #3586FF;
+    color: white;
+    background: #3586FF;
+}
+
+.section-courses .categoryes input {
+    display: none;
+}
+
+.section-courses .categoryes .cat-line {
+    margin: 20px 0;
+}
+
+.section-courses .left {
+    width: 27%;
+    /* text-align: center; */
+}
+
+.section-courses .right {
+    width: 73%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+}
+
+.section-courses .categoryes .info {
+    display: flex;
+}
+
+.section-courses .categoryes .card {
+    width: 30%;
+    height: 250px;
+    background-color: #CFDCE1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    justify-content: end;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(72, 98, 200, 0.711);
+}
+
+.section-courses .categoryes .card {
+    height: 100%;
+}
+
+.section-about {
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.section-about .container {
+    display: flex;
+}
+
+.section-about .left,
+.section-about .right {
+    width: 50%;
+}
+
+.section-about .left {
+    padding: 20px 20px 20px;
+}
+
+.section-about .right img {
+    width: 100%;
+    height: 400px;
+}
+
+.section-about .left h2 {
+    margin-bottom: 80px;
+}
+
+.section-about .left p {
+    margin-bottom: 40px;
+}
+
+.section-stats h2 {
+    text-align: center;
+}
+.section-stats .stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.section-stats .stat {
+    width: 23%;
+}
+.section-stats .stats .stat h2 {
+    background-color: #3586FF;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.section-stats .stats .stat h3 {
+    margin-bottom: 10px;
+}
+.section-stats .stats .stat p {
+    font-size: 12px;
 }
